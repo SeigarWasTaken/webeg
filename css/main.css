@@ -50,18 +50,15 @@ p {
   );
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
 .container {
   width: 1024px;
   margin: 0 auto;
-}
-
-.wrapper-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
 }
 
 .offer {
@@ -177,7 +174,8 @@ p {
   text-align: center;
 }
 .placeholder {
-  text-align: center;  
+  align-items: center;
+  color: rgb(228, 235, 238);
 }
 .buttn {
   text-align: center;
@@ -231,22 +229,28 @@ p {
 
 p {
   position: relative;
-  animation: mymove 2s ;
+  animation: mymove 2s;
 }
 
 @keyframes mymove {
-  0%   {top: 0px;}
-  100%  {top: 200px;}
-  25%  {top: 50px}
-  75% {top: 100px;}
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 200px;
+  }
+  25% {
+    top: 50px;
+  }
+  75% {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .container {
     width: 960px;
   }
-
-  
 }
 
 @media screen and (max-width: 992px) {
@@ -274,5 +278,4 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-
 }
